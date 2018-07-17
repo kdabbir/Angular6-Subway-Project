@@ -1,0 +1,22 @@
+<hr>
+<app-meal-type></app-meal-type>
+<hr>
+<app-bread-type></app-bread-type>
+<hr>
+<app-sauce-type>
+</app-sauce-type>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item
+      *ngFor="let recipeEl of recipes; let i = index"
+      [recipe]="recipeEl"
+      [index]="i"></app-recipe-item>
+  </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success" (click)="onNewRecipe()">New Menu Item</button>
+    </div>
+  </div>

@@ -1,0 +1,10 @@
+
+
+ 
+<div class="row">
+  <div class="col-xs-4"><label>Select Sauce Type: </label></div>
+<div class="col-xs-8">
+  <ngx-select-dropdown [config]="config" [(value)]="selectedSauceType" [options]="sauceType" multiple="true" (change) = "onSauceTypeChange()"
+ ></ngx-select-dropdown>
+</div>
+</div>

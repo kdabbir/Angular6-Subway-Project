@@ -1,0 +1,22 @@
+<!-- <p>
+  breadtype works!
+</p> -->
+<!-- <app-breadtype></app-breadtype> -->
+<!-- <input type="text" value="Select Breadtype" disabled="disabled"> -->
+<!-- <select>
+    <option *ngFor = "let item of breadtype">
+      {{item}}
+    </option>
+</select> -->
+
+<div class="row">
+  <div class="col-xs-4"><label>Select Bread Type: </label></div>
+<div class="col-xs-8">
+  <ngx-select-dropdown [config]="config" [options]="breadtype" [(value)]="selectedBreadType" (change) = "onBreadTypeChange()"
+  ></ngx-select-dropdown>
+</div>
+</div>
+
+ <!-- [(value)]="dataModel" -->
+
+<!-- <p>Selected breadtype is  : {{dataModel}}</p> -->
